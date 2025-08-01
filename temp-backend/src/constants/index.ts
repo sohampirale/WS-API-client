@@ -1,0 +1,1 @@
+export const allFeedbacks=['Good','bad','medium','Awesome']
