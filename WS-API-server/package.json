@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "ws": "^8.18.3"
-  }
+    "http": "^0.0.1-security",
+    "typescript": "^5.9.2",
+    "ws": "^8.18.3",
+    "zod": "^4.0.14"
+  },
+  "type": "module"
 }
