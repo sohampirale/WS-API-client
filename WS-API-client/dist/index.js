@@ -47,6 +47,9 @@ export default class WebSocketClient {
                     reject(error);
                 }
             };
+            this.socket.onclose = (event) => {
+                console.log(`Disconnected with ws`);
+            };
             if (options.timeout) {
                 console.log('settign timeout as : ', options.timeout);
                 setTimeout(() => {

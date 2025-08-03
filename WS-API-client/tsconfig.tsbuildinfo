@@ -1,1 +1,1 @@
-{"root":["./src/index.ts"],"errors":true,"version":"5.8.3"}
+{"root":["./src/index.ts","./src/classes/Queue.ts","./src/helpers/parseData.ts","./src/helpers/stringifyData.ts","./src/interfaces/index.ts","./src/schemas/index.ts","./src/utils/WS_API_ERROR.ts"],"version":"5.8.3"}

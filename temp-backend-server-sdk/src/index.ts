@@ -1,5 +1,4 @@
-import {WebSocketServer} from "../../WS-API-server/dist/index.js"
-
+import { WebSocketServer } from "@sohampirale/ws-api-server";
 const wss=new WebSocketServer({port:3000})
 
 function authMiddleware(req:any,res:any,next:any){

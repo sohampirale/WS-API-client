@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import WebSocketClient from "../../WS-API-client/dist"
+import WebSocketClient from '@sohampirale/ws-api-client';
 
-const url="https://turbo-goggles-q7gqw75vq79vf4w6v-3000.app.github.dev"
+const url="wss://turbo-goggles-q7gqw75vq79vf4w6v-3000.app.github.dev"
 let cnt=0;
 
 function App() {
@@ -31,10 +31,6 @@ function App() {
       setSocket(tempSocket)
     }
 
-    tempSocket.onmessage=(msg:string)=>{
-      console.log('Msg from backend : ',msg);
-    }
-
   },[])
 
   async function handleRequest(){
@@ -48,22 +44,11 @@ function App() {
     const options1={
       route,
       method,
-      timeout:1
-    }
-
-    const options2={
-      route:'/topics',
-      method
     }
 
     socket.request(options1).then((data)=>{
       console.log('data received of request1 : ',data);
       
-    })
-
-
-    socket.request(options2).then((data)=>{
-      console.log('data received of request2 : ',data);
     })
     
   }
